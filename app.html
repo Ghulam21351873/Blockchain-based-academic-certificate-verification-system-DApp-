@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Academic Certificate Verification System</h1>
+    
+    <div id="issueCertificate">
+        <h2>Issue Certificate</h2>
+        <input type="number" id="studentId" placeholder="Student ID" required>
+        <input type="text" id="certificateHash" placeholder="Certificate Hash" required>
+        <button id="issueButton">Issue Certificate</button>
+    </div>
+
+    <div id="verifyCertificate">
+        <h2>Verify Certificate</h2>
+        <input type="text" id="verifyHash" placeholder="Certificate Hash" required>
+        <button id="verifyButton">Verify</button>
+        <p id="verificationResult"></p>
+    </div>
+
+    <div id="revokeCertificate">
+        <h2>Revoke Certificate</h2>
+        <input type="text" id="revokeHash" placeholder="Certificate Hash" required>
+        <button id="revokeButton">Revoke Certificate</button>
+    </div>
+</body>
+</html>
